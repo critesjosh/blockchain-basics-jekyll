@@ -1,12 +1,26 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Book"
+    url: /blockchain-basics/introduction
+
+book:
+  - title: Introduction
+    children:
+      - title: "Before we begin"
+        url: /blockchain-basics/before-we-begin/
+      - title: "How to use this guide"
+        url: /blockchain-basics/how-to-use-this-guide/
+
+  - title: What's the big Deal?
+    children:
+      - title: "What's the big Deal?"
+        url: /blockchain-basics/whats-the-big-deal/
+      - title: "Principles of Decentralization"
+        url: /blockchain-basics/principles-of-decentralization/        
+      - title: "A Brief History of Blockchain"
+        url: /blockchain-basics/history-of-blockchain/
+
+  - title: Introduction to Ethereum
+    children:
+      - title: "Blockchain Basics"
+        url: /blockchain-basics/blockchain-basics/
