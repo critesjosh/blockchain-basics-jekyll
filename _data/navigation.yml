@@ -17,10 +17,40 @@ book:
         url: /blockchain-basics/whats-the-big-deal/
       - title: "Principles of Decentralization"
         url: /blockchain-basics/principles-of-decentralization/        
+
+  - title: Introduction to Blockchains
+    children:
       - title: "A Brief History of Blockchain"
         url: /blockchain-basics/history-of-blockchain/
+      - title: "Blockchain Basics"
+        url: /blockchain-basics/blockchain-basics/
+      - title: "Private vs Public Blockchains"
+        url: /blockchain-basics/public-vs-private/
+      - title: "Connecting Blockchains Together"
+        url: /blockchain-basics/connecting-blockchains/        
+
 
   - title: Introduction to Ethereum
     children:
-      - title: "Blockchain Basics"
-        url: /blockchain-basics/blockchain-basics/
+      - title: "The Ethereum Blockchain"
+        url: /blockchain-basics/ethereum-blockchain/
+      - title: "Cryptoeconomics"
+        url: /blockchain-basics/cryptoeconomics/
+      - title: "Tokens and Crowdfunding"
+        url: /blockchain-basics/tokens-and-crowdfunding/  
+      - title: "Identity and Reputation"
+        url: /blockchain-basics/identity-and-reputation/ 
+      - title: "Decentralized Governance and Voting"
+        url: /blockchain-basics/decentralized-governance-voting/  
+      - title: "Decentralized Exchanges and Peer-to-peer Trading"
+        url: /blockchain-basics/decentralized-exchanges/   
+      - title: "Price Stabilization"
+        url: /blockchain-basics/price-stabilization/   
+      - title: "Prediction Markets"
+        url: /blockchain-basics/prediction-markets/                                                
+      - title: "Decentralized Storage"
+        url: /blockchain-basics/decentralized-storage/        
+      - title: "Ethereum Limitations and Scaling Solutions"
+        url: /blockchain-basics/ethereum-limitations-scaling/
+      - title: "Common Misconceptions"
+        url: /blockchain-basics/common-misconceptions/              

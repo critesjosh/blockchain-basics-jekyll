@@ -1,0 +1,415 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.15.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Decentralized Storage - Minimal Mistakes</title>
+<meta name="description" content="A flexible Jekyll theme for your blog or site with a minimalist aesthetic.">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Minimal Mistakes">
+<meta property="og:title" content="Decentralized Storage">
+<meta property="og:url" content="https://mmistakes.github.io/minimal-mistakes/_docs/chapter1/ethereum-introduction/decentralized-internet-and-storage/">
+
+
+
+
+  <meta property="og:image" content="https://mmistakes.github.io/minimal-mistakes/assets/images/site-logo.png">
+
+
+
+  <meta name="twitter:site" content="@mmistakes">
+  <meta name="twitter:title" content="Decentralized Storage">
+  <meta name="twitter:description" content="A flexible Jekyll theme for your blog or site with a minimalist aesthetic.">
+  <meta name="twitter:url" content="https://mmistakes.github.io/minimal-mistakes/_docs/chapter1/ethereum-introduction/decentralized-internet-and-storage/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="https://mmistakes.github.io/minimal-mistakes/assets/images/site-logo.png">
+    
+  
+
+  
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://mmistakes.github.io/minimal-mistakes/_docs/chapter1/ethereum-introduction/decentralized-internet-and-storage/">
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://mmistakes.github.io/minimal-mistakes",
+      "logo": "https://mmistakes.github.io/minimal-mistakes/assets/images/site-logo.png"
+    }
+  </script>
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Michael Rose",
+      "url": "https://mmistakes.github.io/minimal-mistakes",
+      "sameAs": ["https://twitter.com/mmistakes","https://facebook.com/michaelrose"]
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y" />
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/minimal-mistakes/feed.xml" type="application/atom+xml" rel="alternate" title="Minimal Mistakes Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/minimal-mistakes/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--default">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/minimal-mistakes/">Minimal Mistakes</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/minimal-mistakes/docs/quick-start-guide/" >Quick-Start Guide</a>
+            </li><li class="masthead__menu-item">
+              <a href="/minimal-mistakes/about/" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/minimal-mistakes/year-archive/" >Sample Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/minimal-mistakes/collection-archive/" >Sample Collections</a>
+            </li><li class="masthead__menu-item">
+              <a href="/minimal-mistakes/terms/" >Terms &amp; Privacy Policy</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      <h1 id="decentralized-storage">Decentralized Storage</h1>
+
+<h3 id="adapted-from-decentralized-storage-the-backbone-of-the-third-web---consensys-media-2016-and-an-introduction-to-ipfs---consensys-media-2016">Adapted from <a href="https://media.consensys.net/decentralized-storage-the-backbone-of-the-third-web-d4bc54e79700"><strong>Decentralized Storage: The Backbone of the Third Web</strong></a> - ConsenSys Media, 2016 and <a href="https://medium.com/@ConsenSys/an-introduction-to-ipfs-9bba4860abd0"><strong>An Introduction to IPFS</strong></a> - ConsenSys Media, 2016</h3>
+
+<p>In the last decade much of the internet has moved onto “cloud storage” which has powered the new web. Most of the applications we use on a daily basis have our data stored in server farms owned by Amazon, Google, or Microsoft. In this new era of decentralized applications, developers are turning to decentralized storage as a way to avoid censorship, server outages, and hacks. This section will explore some of the solutions for storage in Web 3:</p>
+
+<p>Since the World Wide Web hit the mainstream in 1994, we have seen the network expand to encompass almost every aspect of human life. The underlying infrastructure of the Internet and the services built on top of it are interdependent, one informing the other as new use cases and technologies arise. There have been two clear generations in the services and structure of the web thus far, but today we are moving into a third. This section will look at what characterized Web 1.0 and 2.0 and what may characterize Web 3.0. We will then look at the storage technologies that are likely to form its backbone: the decentralized storage network <a href="https://ipfs.io/">IPFS</a> and its incentive platform <a href="http://filecoin.io/">Filecoin</a> and Swarm, an emerging Ethereum oriented storage platform that uses IPFS.</p>
+
+<h2 id="web-10--20-"><strong>Web 1.0 &amp; 2.0</strong> <a id="ab9d"></a></h2>
+
+<p>Web 1.0 was the birth of a new idea. If we can connect all of the computers in the world through a global network, the Internet, then we should be able to make the collective content pool universally accessible. For this mass of data to be usable it needed to be indexed and browsable. This necessity was behind the innovation that led to the first generation of the World Wide Web.</p>
+
+<p>Web 2.0 took this new global resource, a universally accessible pool of content, and began plugging things into it. Programs could connect and use the Web as a way to store information and communicate with each other. Central intermediaries, today’s Googles and Facebooks, assumed the roles of data silos and switchboards, offering scalable resources and routing traffic. While these new corporations have changed the way we live and provide amazing services, they also leverage their centralized position for profit and power.</p>
+
+<p>In their orange paper, <a href="http://swarm-gateways.net/bzz:/swarm/ethersphere/orange-papers/1/sw^3.pdf">“Swap, Swear and Swindle: Incentive System for Swarm”, Viktor Trón, Aron Fischer, Dániel a. Nagy, Zsolt Felföldi, Nick Johnson</a> writes that:</p>
+
+<p><em>Context-sensitive targeted advertising offered a Faustian bargain to content producers. As in ‘We give you scalable hosting that would cope with any traffic your audience throws at it, but you give us substantial control over your content; we are going to track each member of your audience and learn — and own — as much of their personal data as we can, we are going to pick who can and who cannot see it, we are going to proactively censor it and we may even report on you, for the same reason.’ Thus, millions of small content producers created immense value for very few corporations, getting only peanuts (typically, free hosting) in exchange.</em></p>
+
+<p>As the Web grew, we reached scaling limits. Central nodes required ever more bandwidth to cope with even increasing data flows. Over time, as things were shuffled around, links broke and content was lost, vanishing due to unsearchably into the mass of information.</p>
+
+<p>To compound these problems, security never achieved a level appropriate for the new communication and commerce services provided through the Web. The client-server model relies on a system of digital certificates, which are issued by third parties to secure connections. The problem is that if the third party is compromised, so, potentially, are all the connections made using its certificates.</p>
+
+<p>According to <a href="http://www.juniperresearch.com/press/press-releases/cybercrime-cost-businesses-over-2trillion">Juniper Research</a>, “the rapid digitization of consumers’ lives and enterprise records will increase the cost of data breaches to $2.1 trillion globally by 2019, increasing to almost four times the estimated cost of breaches in 2015.” Thus, the scene is set for a paradigm shift and a cluster of new technologies are emerging. They promise to solve the problems plaguing the existing system and create a new way of using the Web.</p>
+
+<h2 id="web-30-"><strong>Web 3.0</strong> <a id="ac77"></a></h2>
+
+<p>Following the trend set by earlier iterations, the idea of Web 3.0 posits a change in the way content and programs interact. If central intermediaries like Facebook and Google are cut out of the picture, many of the problems we have today will go with them. Instead, <a href="https://en.wikipedia.org/wiki/Content-addressable_storage"><em>content addressing</em></a> and related techniques will allow content and programs to link to one another directly and in a more robust fashion. Blockchain technologies like the digital currency Bitcoin and the smart contract platform Ethereum use unbreakable <a href="https://media.consensys.net/2016/06/01/1499/"><em>public key cryptography</em></a> to secure the connection between programs and protect data.</p>
+
+<p>This is an alternative to the centrally issued SSL (Secure Sockets Layer) Certificates used today. Because there is no central intermediary routing traffic, connections can dynamically find the most efficient pathway through the Internet and route around congestion or damage.</p>
+
+<p>These systems were designed for financial transactions though. They are not suited to storing and relaying the volume of information required to replace a central server. BitTorrent is a popular solution that has excellent storage and scaling characteristics. However, navigating the <a href="https://en.wikipedia.org/wiki/Distributed_hash_table"><em>Distributed Hash Table</em></a> used to index content on the network can take seconds. This kind of latency (wait time) is fine for large file transfers but no good for datacenter use cases.</p>
+
+<h2 id="interplanetary-file-system-ipfs-">InterPlanetary File System (<strong>IPFS)</strong> <a id="cdfd"></a></h2>
+
+<p>Described by Viktor Tron as “the lego kit for the third web,” <a href="https://ipfs.io/">IPFS</a> is a new system for storing data on a large number of computers. It is transport layer agnostic, meaning that it can communicate through transport layers like transmission control protocol (TCP), uTP, UDT, QUIC, TOR, and even Bluetooth)</p>
+
+<p>Instead of a central server, a <a href="https://en.wikipedia.org/wiki/Peer-to-peer"><em>peer to peer network</em></a> is used to establish connections. <a href="https://media.consensys.net/2016/06/01/1499/">Public key cryptography</a> is built into the node addressing system and <a href="https://en.wikipedia.org/wiki/Content-addressable_storage"><em>content addressing</em></a> is used to index content. Both node and content addresses are stored in a decentralized naming system called InterPlanetary Naming System (IPNS).</p>
+
+<p><strong>Node addressing and connection security</strong></p>
+
+<ul>
+  <li>Nodes in the peer to peer network each hold private keys and release public keys, just like in Bitcoin or Ethereum.</li>
+  <li>Node addresses are derived through <a href="https://media.consensys.net/2016/06/03/guide-hashing/"><em>hashing</em></a> their public keys. Allowing connection verification through message signing.</li>
+  <li>Their public keys can be used to encrypt data before it is transferred, preventing interception and theft.</li>
+</ul>
+
+<p>Solutions to the security issues of today’s web are built into this addressing system. There is no need for a trusted central certificate issuer to provide connection verification tools and all connections can easily be encrypted by default. No more SSL.</p>
+
+<h2 id="a-high-level-approach-to-ipfs">A High Level Approach to IPFS</h2>
+
+<p>At its core, IPFS is a versioned file system that can take files and manage them and also store them somewhere and then tracks versions over time. IPFS also accounts for how those files move across the network so it is also a distributed file system.</p>
+
+<p>IPFS has rules as to how data and content move around on the network that are similar in nature to bittorrent. This file system layer offers very interesting properties such as:</p>
+
+<ul>
+  <li>websites that are completely distributed</li>
+  <li>websites that have no origin server</li>
+  <li>websites that can run entirely on client side browsers</li>
+  <li>websites that do not have any servers to talk to</li>
+</ul>
+
+<h2 id="http-vs-ipfs-to-find-and-retrieve-a-file"><strong>HTTP vs. IPFS to find and retrieve a file</strong></h2>
+
+<p>HTTP has a nice property where in the identifier is the location so it is easy to find the computers hosting the file and talk to them. This is useful and generally works very well but not in the offline case or in large distributed scenarios where you want to minimize load across the network.</p>
+
+<p>In IPFS you separate the steps into two parts;</p>
+
+<ol>
+  <li>Identify the file with content addressing</li>
+  <li>Go and find it — when you have the hash then you ask the network you’re connected to ‘who has this content? (hash)’ and you connect to the corresponding nodes and download it.</li>
+</ol>
+
+<p>The result is a peer to peer overlay that gives you very fast routing.</p>
+
+<p>To learn more, watch the <a href="https://www.youtube.com/watch?v=8CMxDNuuAiQ">Alpha Video</a>.</p>
+
+<h2 id="content-addressing"><strong>Content Addressing</strong></h2>
+
+<p>A content address is derived by hashing a piece of content.</p>
+
+<ul>
+  <li>That content address is then hashed again to derive a <em>key name.</em></li>
+  <li>The key name is associated with a human readable name in IPNS (IPFS’ address registry).</li>
+</ul>
+
+<p>Instead of referring to objects (pictures, articles, videos) by which server they are stored on, IPFS refers to everything by the hash on the file. The idea is that if in your browser you want to access a particular page then IPFS will ask the entire network “does anyone have this file that corresponds to this hash?” and a node on IPFS that does can return the file allowing you to access it.</p>
+
+<p>IPFS uses content addressing at the HTTP layer. This is the practice of saying instead of creating an identifier that addresses things by location, we’re going to address it by some representation of the content itself. This means that the content is going to determine the address. The mechanism is to take a file, hash it cryptographically so you end up with a very small and secure representation of the file which ensures that someone can not just come up with another file that has the same hash and use that as the address. The address of a file in IPFS usually starts with a hash that identifies some root object and then a path walking down. Instead of a server, you are talking to a specific object and then you are looking at a path within that object.</p>
+
+<p>In today’s web, if a file is moved, all links to that file need to be updated if they are to resolve. Because IPFS addresses are derived from the content they refer to, if the content still exists anywhere on the network, links will always resolve. This removes any need for duplication of content, except for the purposes of greater persistence security or for scaling up serving capabilities.</p>
+
+<p>However, for a decentralized storage system to grow to replace the current model, it needs a way to incentivize the storage and serving of content.</p>
+
+<p>Filecoin is one solution being developed by Protocol Labs, Swarm is another being developed by the Ethereum foundation. Both projects make use of IPFS technology but have different philosophies on how to incentivize participation.</p>
+
+<h2 id="filecoin-"><strong>Filecoin</strong> <a id="68d4"></a></h2>
+
+<p><a href="https://filecoin.io/">Filecoin</a> is a protocol launched by Protocol Labs, the same entity that developed IPFS. If you want to dive in in much greater detail, we will refer you to the <a href="https://filecoin.io/filecoin.pdf">Filecoin White Paper</a>.</p>
+
+<p>Filecoin uses an established consensus process already in use securing a financial network. By requiring nodes to solve puzzles based on randomly selected data chunks, a Proof of Work algorithm can be built, which will reward the nodes that store more data chunks and have better connectivity. Tools for adding redundancy and the ability to select nodes based on reputation, whether that be tracked within the protocol or outside it, will address the problem of persistent storage.</p>
+
+<h2 id="swarm-"><strong>Swarm</strong> <a id="c58a"></a></h2>
+
+<p>Swarm was conceived of as a storage protocol tailored for interoperation with the Ethereum smart contract ecosystem. Like Filecoin, it will piggyback on Ethereum’s consensus process in order to provide a decentralized alternative to our existing client/server infrastructure. Incentivising persistent storage is a challenge, however. The downside of a node deleting data and losing some income is potentially much less significant than a user losing his or her valuable data.</p>
+
+<p>Swarm takes the approach of rewarding nodes for serving content. Because more often requested content is more profitable to store than rarely requested content, rewarding nodes only for recall would incentivise the trashing of rarely accessed data. Failure to store every last piece of a large data set can result in the entire set being rendered useless, so in these cases a solution must exist to balance this downside asymmetry.</p>
+
+<p>Using content recall as the base reward mechanism and distributing content randomly among nodes, weighted for location, puts Swarm in a good place to start solving the persistence problem:</p>
+
+<ul>
+  <li>Nodes offering “promissory” storage, or storage with a promise of persistence, must first post a security deposit covering the time for which they are offering storage.</li>
+  <li>If data is lost during this period, the bond is forfeited.</li>
+</ul>
+
+<p>The smart contract infrastructure of Ethereum automates this whole process, making the “upload and forget” experience seamless.</p>
+
+
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <div align="center" style="margin: 1em 0;">
+        <ins class="adsbygoogle"
+             style="display:block; border-bottom: initial;"
+             data-ad-client="ca-pub-7328585512091257"
+             data-ad-slot="3049671934"
+             data-ad-format="auto"></ins>
+        </div>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><div class="search-searchbar"></div>
+    <div class="search-hits"></div></div>
+
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://instagram.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    <li><a href="/minimal-mistakes/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 Michael Rose. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/minimal-mistakes/assets/js/main.min.js"></script>
+  <script data-search-pseudo-elements defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+
+
+<!-- Including InstantSearch.js library and styling -->
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch-theme-algolia.min.css">
+
+<script>
+// Instanciating InstantSearch.js with Algolia credentials
+const search = instantsearch({
+  appId: 'QB6HVGBSBA',
+  apiKey: '9d5014e5bbc77372547bce778dfa5663',
+  indexName: 'minimal_mistakes',
+  searchParameters: {
+    restrictSearchableAttributes: [
+      'title',
+      'content'
+    ]
+  }
+});
+
+const hitTemplate = function(hit) {
+  const url = hit.url;
+  const title = hit._highlightResult.title.value;
+  const content = hit._highlightResult.html.value;
+
+  return `
+    <div class="list__item">
+      <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="/minimal-mistakes${url}">${title}</a></h2>
+        <div class="archive__item-excerpt" itemprop="description">${content}</div>
+      </article>
+    </div>
+  `;
+}
+
+// Adding searchbar and results widgets
+search.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '.search-searchbar',
+    poweredBy: true,
+    placeholder: 'Enter your search term...'
+  })
+);
+search.addWidget(
+  instantsearch.widgets.hits({
+    container: '.search-hits',
+    templates: {
+      item: hitTemplate
+    }
+  })
+);
+
+// Starting the search
+search.start();
+</script>
+
+
+
+
+
+
+  </body>
+</html>

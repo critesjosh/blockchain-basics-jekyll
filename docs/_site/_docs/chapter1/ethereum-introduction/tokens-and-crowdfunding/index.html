@@ -1,0 +1,379 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.15.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Tokens and Crowdfunding - Minimal Mistakes</title>
+<meta name="description" content="A flexible Jekyll theme for your blog or site with a minimalist aesthetic.">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Minimal Mistakes">
+<meta property="og:title" content="Tokens and Crowdfunding">
+<meta property="og:url" content="https://mmistakes.github.io/minimal-mistakes/_docs/chapter1/ethereum-introduction/tokens-and-crowdfunding/">
+
+
+
+
+  <meta property="og:image" content="https://mmistakes.github.io/minimal-mistakes/assets/images/site-logo.png">
+
+
+
+  <meta name="twitter:site" content="@mmistakes">
+  <meta name="twitter:title" content="Tokens and Crowdfunding">
+  <meta name="twitter:description" content="A flexible Jekyll theme for your blog or site with a minimalist aesthetic.">
+  <meta name="twitter:url" content="https://mmistakes.github.io/minimal-mistakes/_docs/chapter1/ethereum-introduction/tokens-and-crowdfunding/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="https://mmistakes.github.io/minimal-mistakes/assets/images/site-logo.png">
+    
+  
+
+  
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://mmistakes.github.io/minimal-mistakes/_docs/chapter1/ethereum-introduction/tokens-and-crowdfunding/">
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://mmistakes.github.io/minimal-mistakes",
+      "logo": "https://mmistakes.github.io/minimal-mistakes/assets/images/site-logo.png"
+    }
+  </script>
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Michael Rose",
+      "url": "https://mmistakes.github.io/minimal-mistakes",
+      "sameAs": ["https://twitter.com/mmistakes","https://facebook.com/michaelrose"]
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y" />
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/minimal-mistakes/feed.xml" type="application/atom+xml" rel="alternate" title="Minimal Mistakes Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/minimal-mistakes/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--default">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/minimal-mistakes/">Minimal Mistakes</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/minimal-mistakes/docs/quick-start-guide/" >Quick-Start Guide</a>
+            </li><li class="masthead__menu-item">
+              <a href="/minimal-mistakes/about/" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/minimal-mistakes/year-archive/" >Sample Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/minimal-mistakes/collection-archive/" >Sample Collections</a>
+            </li><li class="masthead__menu-item">
+              <a href="/minimal-mistakes/terms/" >Terms &amp; Privacy Policy</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      <h1 id="tokens-and-crowdfunding">Tokens and Crowdfunding</h1>
+
+<p><strong>Adapted from</strong> <a href="https://medium.com/@ConsenSys/tokens-on-ethereum-e9e61dac9b4e"><strong>A Token-Powered Future on Ethereum</strong></a> <strong>- ConsenSys, Simon de La Rouviere and Ashley Taylor, 2015</strong></p>
+
+<p>The recent buzz around token sales has brought interest to what tokens are and what they mean for the digital products. In this section we will explore the significance of tokens how it influences funding.</p>
+
+<h2 id="what-is-a-token"><strong>What is a Token?</strong></h2>
+
+<p>A <strong>token</strong> is a digital asset. It is an object of value itself, or representation of any other asset on a digital ledger. In this case, the Ethereum blockchain acts as a ledger. At ConsenSys, we are building a stand alone DApp that allows people and businesses to issue tokens of all types with specific rights and purposes. We are also currently integrating the system into other DApps and platform ecosystems on Ethereum, which will provide the ability for others to do so in the future.</p>
+
+<h2 id="historical-context-of-tokens"><strong>Historical Context of Tokens</strong></h2>
+
+<p>Tokens have been a useful part of society for the purposes of trade: from trinkets and shells, to coins, to the digital era of Bitcoin and Ether. In most of these circumstances, tokens are a way to reduce the social transaction costs. Money thus provides us the ability to work together on grander scales. It has allowed us to incentivize working together towards a common goal efficiently.</p>
+
+<p>All around the world, networks are being built that use tokens to enable the ability to work together and share responsibility in the distributed organizational structures of tomorrow. These include open industry platforms for <a href="https://www.linkedin.com/pulse/ethereum-enabled-community-energy-market-sharing-economy-john-lilic-6071756565017305088?trk=pulse_spock-articles">energy</a>, <a href="http://ujomusic.com/">music</a>, and poker.</p>
+
+<h2 id="blockchains-enable-a-tokenized-future-by"><strong>Blockchains Enable a Tokenized Future by:</strong></h2>
+
+<p>1) Reducing the barrier to entry to create tokens (in terms of security &amp; cost)</p>
+
+<p>2) Allowing global and free trade of tokens</p>
+
+<p>3) (probably the most important) Allowing the tokens to interoperate on a transparent global ledger. Previously, all tokens were contained within their own silos. Being able to automatically exchange on a global scale enables more efficient and far reaching forms of cooperation.</p>
+
+<h2 id="what-is-a-token-on-ethereum"><strong>What is a Token on Ethereum?</strong></h2>
+
+<p>The Bitcoin token is a successful case study in the ability to send and transfer value on a transparent public ledger. But what else can we do with tokens?</p>
+
+<p>Using the <strong>Ethereum Virtual Machine</strong> (EVM) and an Ethereum programming language (like Solidity, LLL, or Viper), we can add arbitrary computer code to tokenize many different kinds of value. Smart contracts govern rights around their ownership, transfer, expiration, and even decay. Tokens can represent any asset such as:</p>
+
+<ul>
+  <li>an hours worth of <a href="https://www.linkedin.com/pulse/ethereum-enabled-community-energy-market-sharing-economy-john-lilic">rooftop solar energy</a></li>
+  <li>a currency such as dollar, euro, rupee, or gbp</li>
+  <li>promise for a product in a <a href="http://weifund.io/">crowdfund</a></li>
+  <li>a future download of a <a href="http://ujomusic.com/">song</a> from your favorite artist</li>
+  <li>or an insurance policy</li>
+</ul>
+
+<h2 id="why-do-we-need-tokens"><strong>Why do We Need Tokens?</strong></h2>
+
+<p>Tokens are a mechanism to introduce property into the digital realm. They enable valuable components of a digital economy to become tangible because they can be claimed, and in some cases traded. Additionally, when trades are automated on a permissionless ledger such as Ethereum, it lowers the barrier to entry to create, manage and participate in more efficient networks of value. The conditions also allow more effective price discovery for individuals and groups.</p>
+
+<p>Tokenized assets allows for goods to be traded as close to directly as possible, sometimes without an abstraction of money or an intermediary. Ether, the native token of Ethereum network, acts as the crypto-fuel required for the processing of a transaction. Imagine trading excess solar energy for a ride to work from your neighbor. In this case, the tokens are exchanged on a decentralized platform, which can happen automatically and fluidly for the parties involved. Exchange platforms can take a small fee for their services if they are providing value for the swap.</p>
+
+<p>Because Ethereum is an open protocol, the best exchange service for particular use cases will flourish. Services like Etherex will only continue to thrive as they add value in the system, because new ones will have access to the available protocol to outcompete stagnant incumbents. Exchanges could also be managed and governed only by the people that use it: keeping the cost at the market minimum. These models of cooperative governance are also being developed at ConsenSys.</p>
+
+<p>Those token portfolios will become critical parts of our future reputation. They provide the basis for a reputation based economy, facilitating more organic connections between people and projects. For example, imagine Isaac who participated in the crowdfunded albums of 18 of the top R&amp;B artists and 20 public art installation pieces. He wants to find collaborators in a future project that fuses both interests to create a hip hop hall of fame in Union Square NYC Holiday season.</p>
+
+<p>Because individuals maintain their own reputation portfolios using a wallet like <a href="https://www.uport.me/">uPort.me</a>, these organic connections are only facilitated on the terms of the actual people who control their wallets. Each person decides how they will want to display their tokens, and with whom. The systems are flexible. It’s up to us to decide what kind of tokens we want to issue, the rules we decide to have around them, and the kinds of contexts in which they will be useful.</p>
+
+<p>The standards are close to being finalised by the community, so stay tuned for more blog posts on a token-powered future. For an in-depth overview on the tokens core component, check out <a href="https://www.youtube.com/watch?v=kE5oGw8oKsY">Simon de La Rouviere’s talk at DevCon</a>.</p>
+
+<h2 id="understanding-the-network-effect-metcalfs-law-and-tokens"><strong>Understanding the Network Effect, Metcalf’s Law, and Tokens</strong></h2>
+
+<p>A network has value proportional to the number of individuals on the network squared. This is called Metcalf’s law. A way to think about Metcalf’s Law is in terms of a telephone network - if one person has a phone, then the network has very little value. But if two people have a phone, then there is value in that we can call each other. If our banker, barber, and grocery store all get phones, this, adds more value to the network, at no additional cost to the original adopers.</p>
+
+<p>A method to incentivize early adopters is issuing a token that allows these early users privledges on the network. Issuing a token can be a way to jump start the network effect allows for the platform to more quickly create the network effect.</p>
+
+<h2 id="tokens-as-a-protocol-as-part-of-open-networks"><strong>Tokens as a Protocol as Part of Open Networks</strong></h2>
+
+<p>Issuing a token allows for platform interoperability - more people able to get onto and use platforms, and build things on top of them. With Web 2.0, many of the original open networks have become walled gardens that the company who created them maintain. Twitter is able to ban users, and there is little to be done other than turn to the court of public opinion to appeal the decision. An open network would allow the users to potentially vote on whom to ban if their content were deemed offensive, and use an economic incentive to do so.</p>
+
+<p>In this example, a user who finds offensive content could report it to the network, and would need to put up a stake in order to challenge the content. This stake would be a token issued by the network, which has some utility within the network, like allowing a user to make a post. The party accused of having the offensive content could take the content down, or contest the ruling, putting up a token as stake as well. Then a group of individuals within the network would convene to rule on whether the content was offensive or not. If the content was found to be offensive, the party who posted the content would lose their token, and it would be distributed to the individual who found the offending content, along with the adjudication board. If the opposite were true, the individual who flagged the content would lose their token to the party who posted the content and the adjudication board.</p>
+
+<p>This gives the power of the network to the users to be a self-determining body to determine the direction of the network. This is important because it puts a check on the monopolization of the network and allows for network governance. We will explore these ideas further in Decentralized Governance and Voting.</p>
+
+<p><a href="https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md">Ethereum Request for Comments 20 (ERC20) token standard</a> is the standard which allowed for users of Ethereum to create tokens on top of the existing Ethereum blockchain, making mainnet both an open network and Application Programming Interface (API) that is fueled by Ether. When you hear that a token is an ERC-20 token, it means that the token follows this standard and is a token issued on top of the Ethereum blockchain.</p>
+
+<h2 id="crowdfunding">Crowdfunding</h2>
+
+<p>If you, the reader, were tasked with starting a company, the likely methods you would choose in order to initially fund it would likely be putting in your own money, asking those within your network of family, friends, and connections for money, going to an institution that could lend you the money (like a bank or a venture capital investor), or turning to a platform like kickstarter to raise money from the crowd.</p>
+
+<p>Now, imagine that you could tap into all of those funding sources at the same time. It would be a very powerful way to raise funds for the company you are trying to build. Issuing a token on your platform allows you to start your company using investment from individuals or entities that decide to contribute to your venture.</p>
+
+<h2 id="legal-implications-of-tokens">Legal Implications of Tokens</h2>
+
+<p>Coinbase, Coin Center, Union Square Ventures and ConsenSys created the following framework as a starting point for developers and companies entering the space and launching a token. It can be used to analyze the likelihood that a particular blockchain token (e.g. any given App Coin) would be subject to US federal securities law. It also establishes a set of best practices for token crowdsales. This is not legal advice, rather a framework for thinking about legal implications of tokens.</p>
+
+<h3 id="a-securities-law-framework-for-blockchain-tokens---coinbase-2016-10-min-read-minus-detailed-analysis-section"><a href="https://www.coinbase.com/legal/securities-law-framework.pdf"><strong>A Securities Law Framework for Blockchain Tokens</strong></a> - Coinbase, 2016 [10 min read, minus detailed analysis section]</h3>
+
+
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <div align="center" style="margin: 1em 0;">
+        <ins class="adsbygoogle"
+             style="display:block; border-bottom: initial;"
+             data-ad-client="ca-pub-7328585512091257"
+             data-ad-slot="3049671934"
+             data-ad-format="auto"></ins>
+        </div>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><div class="search-searchbar"></div>
+    <div class="search-hits"></div></div>
+
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://instagram.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    <li><a href="/minimal-mistakes/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 Michael Rose. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/minimal-mistakes/assets/js/main.min.js"></script>
+  <script data-search-pseudo-elements defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+
+
+<!-- Including InstantSearch.js library and styling -->
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch-theme-algolia.min.css">
+
+<script>
+// Instanciating InstantSearch.js with Algolia credentials
+const search = instantsearch({
+  appId: 'QB6HVGBSBA',
+  apiKey: '9d5014e5bbc77372547bce778dfa5663',
+  indexName: 'minimal_mistakes',
+  searchParameters: {
+    restrictSearchableAttributes: [
+      'title',
+      'content'
+    ]
+  }
+});
+
+const hitTemplate = function(hit) {
+  const url = hit.url;
+  const title = hit._highlightResult.title.value;
+  const content = hit._highlightResult.html.value;
+
+  return `
+    <div class="list__item">
+      <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="/minimal-mistakes${url}">${title}</a></h2>
+        <div class="archive__item-excerpt" itemprop="description">${content}</div>
+      </article>
+    </div>
+  `;
+}
+
+// Adding searchbar and results widgets
+search.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '.search-searchbar',
+    poweredBy: true,
+    placeholder: 'Enter your search term...'
+  })
+);
+search.addWidget(
+  instantsearch.widgets.hits({
+    container: '.search-hits',
+    templates: {
+      item: hitTemplate
+    }
+  })
+);
+
+// Starting the search
+search.start();
+</script>
+
+
+
+
+
+
+  </body>
+</html>

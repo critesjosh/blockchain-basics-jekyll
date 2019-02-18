@@ -1,0 +1,343 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.15.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Ethereum Limitations and Scaling Solutions - Minimal Mistakes</title>
+<meta name="description" content="A flexible Jekyll theme for your blog or site with a minimalist aesthetic.">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Minimal Mistakes">
+<meta property="og:title" content="Ethereum Limitations and Scaling Solutions">
+<meta property="og:url" content="https://mmistakes.github.io/minimal-mistakes/_docs/chapter1/ethereum-introduction/blockchain-limitations/">
+
+
+
+
+  <meta property="og:image" content="https://mmistakes.github.io/minimal-mistakes/assets/images/site-logo.png">
+
+
+
+  <meta name="twitter:site" content="@mmistakes">
+  <meta name="twitter:title" content="Ethereum Limitations and Scaling Solutions">
+  <meta name="twitter:description" content="A flexible Jekyll theme for your blog or site with a minimalist aesthetic.">
+  <meta name="twitter:url" content="https://mmistakes.github.io/minimal-mistakes/_docs/chapter1/ethereum-introduction/blockchain-limitations/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="https://mmistakes.github.io/minimal-mistakes/assets/images/site-logo.png">
+    
+  
+
+  
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://mmistakes.github.io/minimal-mistakes/_docs/chapter1/ethereum-introduction/blockchain-limitations/">
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://mmistakes.github.io/minimal-mistakes",
+      "logo": "https://mmistakes.github.io/minimal-mistakes/assets/images/site-logo.png"
+    }
+  </script>
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Michael Rose",
+      "url": "https://mmistakes.github.io/minimal-mistakes",
+      "sameAs": ["https://twitter.com/mmistakes","https://facebook.com/michaelrose"]
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y" />
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/minimal-mistakes/feed.xml" type="application/atom+xml" rel="alternate" title="Minimal Mistakes Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/minimal-mistakes/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--default">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/minimal-mistakes/">Minimal Mistakes</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/minimal-mistakes/docs/quick-start-guide/" >Quick-Start Guide</a>
+            </li><li class="masthead__menu-item">
+              <a href="/minimal-mistakes/about/" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/minimal-mistakes/year-archive/" >Sample Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/minimal-mistakes/collection-archive/" >Sample Collections</a>
+            </li><li class="masthead__menu-item">
+              <a href="/minimal-mistakes/terms/" >Terms &amp; Privacy Policy</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      <h1 id="ethereum-limitations-and-scaling-solutions">Ethereum Limitations and Scaling Solutions</h1>
+
+<p>While there is a lot of excitement surrounding Ethereum and its future, it’s important to stay realistic about the current state of affairs and the amount of hard work still needed for success. In this section we will touch several areas of concern about the state of Ethereum outlined by Vitalik.</p>
+
+<p>The following list is expanded from a <a href="https://www.reddit.com/r/ethtrader/comments/6lgf0l/vitalik_drops_the_mic_on_rbtc/dju1y8q/">Reddit post</a> by Vitalik Buterin from mid-2017<strong>.</strong></p>
+
+<h2 id="scalability">Scalability</h2>
+
+<p>First and most importantly, Ethereum as it exists today will not scale to serve the needs of the projects that are currently being built on it, let alone handle future projects. The current design of the system requires that individual nodes process every transaction on the entire network. This provides security and verifiability to the system, but severely limits the scalability.</p>
+
+<p>At the time of this writing (January 9th, 2018) Ethereum reached peak transaction volume on January 4th, processing an average of 15.6 transactions per second. To compare, Facebook processes around 175,000 requests per second - Ethereum at its peak performance runs more than 10,000 times slower than Facebook. With the explosion of projects and tokens using the network, demand is sure to continue increasing in the near future.</p>
+
+<p>Thankfully there is active research and support for solving this problem. Vitalik announced <a href="https://blog.ethereum.org/2018/01/02/ethereum-scalability-research-development-subsidy-programs/">“Ethereum scalability research and development subsidy programs”</a> in the domains of <strong>sharding</strong> and layer-2 systems like <strong>Plasma</strong>, State channels and Raiden.</p>
+
+<p><strong>Sharding</strong> is a scaling solution for Ethereum that would eliminate the need for every Ethereum node to process every transaction on the network. The proposition is to limit certain nodes’ processing requirements to a subset of the total processing requirements of the system, with each node processing a shard of the whole and then facilitating communication between shards.</p>
+
+<p><strong>Plasma</strong> also reduces the total processing requirements of nodes in the network. It is a scaling solution that consists of a system of smart contracts that will run on the main Ethereum blockchain. The main blockchain only stores small amounts of verified data from “child” blockchains, each of which are required to maintain their own integrity. Implementing many “child” chains would greatly expand the storage and computing potential of the entire network.</p>
+
+<h2 id="proof-of-work-consensus">Proof of Work Consensus</h2>
+
+<p>Proof of work, the mechanism by which Ethereum maintains system consensus and security, uses a <a href="https://medium.com/thebeammagazine/the-energy-consumption-of-the-crypto-world-b20e3628e0d2">lot of energy</a>. As of December 2017, Ethereum was consuming just over 11 TWh of electricity. That works out to be enough energy to power 1.7 US homes per transaction.</p>
+
+<p>Additionally proof of work is vulnerable to certain types of network attacks whose threats can be mitigated or eliminated by switching to a different consensus mechanism, such as proof of stake.</p>
+
+<p>Fortunately there is ongoing research in this domain as well and there is a <a href="https://bitcoinmagazine.com/articles/ethereum-killer-ethereum-20-vitalik-buterins-roadmap/">roadmap</a> for migrating Ethereum from proof of work to proof of stake. The planned Ethereum implementation of proof of stake is called <strong>Casper.</strong></p>
+
+<h2 id="privacy-or-lack-thereof"><strong>Privacy (or lack thereof)</strong></h2>
+
+<p>There is a lack of privacy on Ethereum. As a public ledger where data is visible to everyone, there are plenty of reasons to keep any sensitive information off of the blockchain. Nevertheless, there are many applications where making private data accessible on the blockchain would be beneficial - consider applications handling financial data or systems dealing with medical records. There needs to be a way that people can conceal data while still allowing it be used reliably in transactions on the blockchain.</p>
+
+<p>Ethereum took a step closer to achieving this with the Byzantium network upgrade that took place in October of 2017. The Byzantium upgrade included support for <strong>zk-SNARKS</strong> which allow for verifying correctness of computation without revealing the contents of computation. This technology can be used to meaningfully use sensitive data in smart contracts while maintaining privacy.</p>
+
+<h2 id="risk-of-theft-or-loss">Risk of theft or loss</h2>
+
+<p>Your private keys are the only way to access your account. This means that if you lose your key or someone who shouldn’t gets ahold of it, you are out of luck. There are no fail-safes and no one can help you. The finality of this is unfamiliar to the average computer user and will likely cause many unhappy users as the technology gains greater adoption.</p>
+
+<h2 id="trusting-applications">Trusting applications</h2>
+
+<p>Contracts on Ethereum are being trusted to hold greater and greater amounts of value. Most of us trust that contracts that we send our Ether to are secure without ever glancing at the code, but there are scammers and hackers out there and honest mistakes happen.</p>
+
+<p>Realistically, it will not be possible for Ethereum users to validate and verify smart contracts before they start interacting with them. Users place trust in application developers that the program is going to do what they say it is going to do, but still bugs persist and hackers get in.</p>
+
+<p>There is currently work being done to programmatically verify that contracts on the blockchain are 100% bug free. Using formal verification, auditors will be able to put a stamp of approval that a smart contract is free of bugs. Issues of honesty and trust will remain, but reducing the number of accidental losses will be a big win for the ecosystem.</p>
+
+
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <div align="center" style="margin: 1em 0;">
+        <ins class="adsbygoogle"
+             style="display:block; border-bottom: initial;"
+             data-ad-client="ca-pub-7328585512091257"
+             data-ad-slot="3049671934"
+             data-ad-format="auto"></ins>
+        </div>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><div class="search-searchbar"></div>
+    <div class="search-hits"></div></div>
+
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://instagram.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    <li><a href="/minimal-mistakes/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 Michael Rose. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/minimal-mistakes/assets/js/main.min.js"></script>
+  <script data-search-pseudo-elements defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+
+
+<!-- Including InstantSearch.js library and styling -->
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch-theme-algolia.min.css">
+
+<script>
+// Instanciating InstantSearch.js with Algolia credentials
+const search = instantsearch({
+  appId: 'QB6HVGBSBA',
+  apiKey: '9d5014e5bbc77372547bce778dfa5663',
+  indexName: 'minimal_mistakes',
+  searchParameters: {
+    restrictSearchableAttributes: [
+      'title',
+      'content'
+    ]
+  }
+});
+
+const hitTemplate = function(hit) {
+  const url = hit.url;
+  const title = hit._highlightResult.title.value;
+  const content = hit._highlightResult.html.value;
+
+  return `
+    <div class="list__item">
+      <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="/minimal-mistakes${url}">${title}</a></h2>
+        <div class="archive__item-excerpt" itemprop="description">${content}</div>
+      </article>
+    </div>
+  `;
+}
+
+// Adding searchbar and results widgets
+search.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '.search-searchbar',
+    poweredBy: true,
+    placeholder: 'Enter your search term...'
+  })
+);
+search.addWidget(
+  instantsearch.widgets.hits({
+    container: '.search-hits',
+    templates: {
+      item: hitTemplate
+    }
+  })
+);
+
+// Starting the search
+search.start();
+</script>
+
+
+
+
+
+
+  </body>
+</html>

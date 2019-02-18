@@ -1,0 +1,387 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.15.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Price Stabilization - Minimal Mistakes</title>
+<meta name="description" content="A flexible Jekyll theme for your blog or site with a minimalist aesthetic.">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Minimal Mistakes">
+<meta property="og:title" content="Price Stabilization">
+<meta property="og:url" content="https://mmistakes.github.io/minimal-mistakes/_docs/chapter1/ethereum-introduction/price-stabilization/">
+
+
+
+
+  <meta property="og:image" content="https://mmistakes.github.io/minimal-mistakes/assets/images/site-logo.png">
+
+
+
+  <meta name="twitter:site" content="@mmistakes">
+  <meta name="twitter:title" content="Price Stabilization">
+  <meta name="twitter:description" content="A flexible Jekyll theme for your blog or site with a minimalist aesthetic.">
+  <meta name="twitter:url" content="https://mmistakes.github.io/minimal-mistakes/_docs/chapter1/ethereum-introduction/price-stabilization/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="https://mmistakes.github.io/minimal-mistakes/assets/images/site-logo.png">
+    
+  
+
+  
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://mmistakes.github.io/minimal-mistakes/_docs/chapter1/ethereum-introduction/price-stabilization/">
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://mmistakes.github.io/minimal-mistakes",
+      "logo": "https://mmistakes.github.io/minimal-mistakes/assets/images/site-logo.png"
+    }
+  </script>
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Michael Rose",
+      "url": "https://mmistakes.github.io/minimal-mistakes",
+      "sameAs": ["https://twitter.com/mmistakes","https://facebook.com/michaelrose"]
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y" />
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/minimal-mistakes/feed.xml" type="application/atom+xml" rel="alternate" title="Minimal Mistakes Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/minimal-mistakes/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--default">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/minimal-mistakes/">Minimal Mistakes</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/minimal-mistakes/docs/quick-start-guide/" >Quick-Start Guide</a>
+            </li><li class="masthead__menu-item">
+              <a href="/minimal-mistakes/about/" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/minimal-mistakes/year-archive/" >Sample Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/minimal-mistakes/collection-archive/" >Sample Collections</a>
+            </li><li class="masthead__menu-item">
+              <a href="/minimal-mistakes/terms/" >Terms &amp; Privacy Policy</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      <h1 id="price-stabilization">Price Stabilization</h1>
+
+<h3 id="adapted-from-stabl-bringing-stable-tokens-and-derivative-products-to-the-ethereum-blockchain---variabl-blog-2017">Adapted from <a href="https://blog.variabl.io/stabl-bringing-stable-tokens-and-derivative-products-to-the-ethereum-blockchain-df4d5eba89d9"><strong>StabL Bringing Stable Tokens and Derivative Products to the Ethereum Blockchain</strong></a> - VariabL Blog, 2017</h3>
+
+<p>One of the big problems holding back users from spending and vendors from accepting cryptocurrencies is the price volatility. Risk averse users avoid adopting crypto and risky investors hold and trade crypto rather than spend it. This has led to price fluctuations that have occurred over the last quarter of 2017 and the start of 2018.</p>
+
+<p>In this section we explore a specific ConsenSys project looking to solve this problem by attempting to peg the value of crypto to more traditional assets like the United States Dollars (USD) or gold.</p>
+
+<h2 id="stable-tokens">Stable Tokens</h2>
+
+<p>Stable tokens have been a leading topic of discussion since the birth of Ethereum. Using the decentralized platform that is the public Ethereum blockchain makes it necessary to hold Ether, not only to use it as gas or fuel, but also to gain access to the shared public resource of the mainnet. This also makes it a standing store of value. The problem with using Ether as a currency is that it is a currency with a variable price. If this obstacle of volatile price were overcome with the introduction of a cryptographic asset that tracks, for example, USD, it would pave the way for massive acceleration of Ethereum adoption.</p>
+
+<h2 id="what-is-at-stake-">What is at Stake? <a id="b3b1"></a></h2>
+
+<p>A Stable token is a crypto-token that keeps a stable value against a specific index like the price of one US Dollar.</p>
+
+<p>A crypto-token is a transferable asset stored on a blockchain. Every token stored on the Ethereum blockchain benefits from the properties of Ether itself: distributed verification of transactions, pseudo-anonymity, almost instantaneous and low-fee transfers, censorship-resistance, access to smart contracts etc. A USD Stable token means mainly two things:</p>
+
+<ol>
+  <li><strong>Crypto-properties are added to dollars.</strong> (You have an asset that has the same value as one USD bill but with better properties: you can do much more with it)</li>
+  <li>It is now possible to <strong>store USD-stable values</strong> within the blockchain with these tokens.</li>
+</ol>
+
+<h2 id="the-spectrum-of-stable-assets">The Spectrum of Stable Assets</h2>
+
+<p>A stable asset is something you can own that keeps a stable value against an index. For instance a gold-stable asset that is worth 500g of gold today will be worth 500g of gold for its entire lifetime. There are plenty of different assets that fit this definition. Here is a list of them and an analysis of how they differ from one another:</p>
+
+<p>Assets that directly represent gold:</p>
+
+<ul>
+  <li>500g of gold buried in a desert.</li>
+  <li>500g of gold ingots.</li>
+  <li>500g of gold coins in a purse.</li>
+  <li>Bank deposit box that contains 500g of gold</li>
+  <li>500 DGX tokens (Ethereum tokens, cheer guys :))</li>
+</ul>
+
+<p>Assets that are valued at a stable gold weight but do not directly represent gold:</p>
+
+<ul>
+  <li>A contract with a friend that states they owe you 500g of gold, with a set due date that is 6 months from now.</li>
+  <li>Gold ETF shares. (<a href="http://etfdb.com/etf/GLD/">SPDR Gold Shares ETF</a> for instance). Shares of a fund with variations that follow gold price variations.</li>
+  <li>Position in a Contract For Difference (CFD) USD vs Gold (i.e: In 6 months from now, I will buy 500g of gold at a specific price determined today)</li>
+  <li>Gold StabL Tokens bought on StabL platform (Ethereum tokens that represent a position in an on-chain cash settled future contract. We will not focus on Gold StabL tokens in our early stages, but this is a good example to explain our approach)</li>
+</ul>
+
+<p>Every previously listed asset has different properties. Let’s try to compare our listed assets with the most important properties.</p>
+
+<h2 id="value-storage-property-ownership-of-your-asset-and-its-underlying-value">Value Storage Property: Ownership of your Asset and its Underlying Value</h2>
+
+<p>What guarantees you that the underlying value of your asset will remain?</p>
+
+<p><strong>How secure is your ownership?</strong></p>
+
+<p>When you store gold yourself (coins, lingots, buried gold), you trust yourself. When you use a bank deposit box, you trust your bank not to be robbed (or to have good insurances). When you use an Ethereum token (StabL, DGX), you trust the Ethereum technology and yourself with the way that you store your private key.</p>
+
+<p>It is difficult to rate these assets against this property since it depends a lot on ourselves? (How do I bury gold? How do I keep my private key? What bank do I choose? How do I store the written contract I signed with my friend?).</p>
+
+<p>Long term, we are convinced that owning a token that lives on a blockchain like Ethereum is the most secure way to own an asset. The Ethereum community is still in the early stage, but mature tools to store and back up private keys along with privacy will make owning tokens seamless yet secure.</p>
+
+<p><strong>Given that your ownership is secure what makes its value guaranteed?</strong></p>
+
+<p>Of course when owning physical gold, there is no risk of your asset losing value. When owning physical gold through a proxy (bank deposit box, DGX), you trust this proxy.</p>
+
+<p>When owning a financial asset like Gold ETFs or Gold futures, it is a bit more complicated. The value is guaranteed by the robustness of the theoretical financial mechanism that includes an ecosystem of traders, arbitragers, hedgers, index providers, laws enforcers, etc. You also usually trust the exchange that gives you access to these assets.</p>
+
+<h2 id="transferability-ability-to-transfer-the-asset">Transferability: Ability to Transfer the Asset.</h2>
+
+<p>Gold coins are more transferable than lingots or raw gold but still need to be exchanged in the physical world. Buried gold or gold stored in a deposit box have poor transferability properties.</p>
+
+<p>Ethereum tokens that represent a stable value of gold (DGX or Gold StabL Tokens) are definitely the assets that have the best transferability properties (20 sec on-chain transfers, instant using state channels, low fees, secure).</p>
+
+<h2 id="liquidity-ability-to-trade-the-asset">Liquidity: Ability to Trade the Asset.</h2>
+
+<p>For an asset to be liquid (meaning you can sell/buy a large amount of it quickly), you need it to be available on exchanges that have large volumes. Volume is one of the key factors that relate to velocity. The most liquid assets are positions in CFD/Futures and ETFs. Indeed, since they don’t represent physical gold but positions in a financial system, it is easy to buy/sell them. You don’t need to move any physical good.</p>
+
+<p>New CFD/Future contracts can be created (on the so called primary markets) as soon as two parties agree on a Future contract. Then these two parties can sell their position in the Future contract (on secondary markets).</p>
+
+<p>In today’s financial world it harder for small investors to trade on the primary market. With Ethereum and easy digital contracts creations, this market becomes way more accessible: the difference between primary markets and secondary markets are blurred, making for an overall more efficient market.</p>
+
+<p>StabL Tokens have the same mechanical properties: if our on-chain financial products (Futures-like products) attract a large number of traders (lot of Future contracts created), our tokens (that represent a position in one of these contracts) will be much more liquid than any gold-backed token. If there does not exist enough Future positions that are stable against USD (represented by a USD StabL token), you just create some by being matched with a trader around a Future contract as easily.</p>
+
+<h2 id="non-financial-properties-what-can-you-do-with-these-assets">Non-Financial Properties: What can you do with these Assets?</h2>
+
+<p>Gold can be used to store value, to transfer value, to wear value, even to lend value as vehicles in contracts. Futures and ETFs have better trading properties since they are well suited for the internet world, yet they rely on centralized parties whereas gold, as a chemical element, relies on, well, physical trust-less laws.</p>
+
+<p>On-chain stable tokens open a whole new world to gold. Both DGX and StabL Tokens can be used in smart contracts. For instance, they can be used as a currency in a trust-less crowdfunding platform like WeiFund. What is even more powerful with StabL tokens is that since their value is guaranteed by a decentralized game theoretical mechanism (based on Futures market), the only potential point of failure lies in the design or the implementation of the mechanism. Even if we think we have found a design that works in the on-chain world, we are very well aware that offering such a mechanism at all once is near impossible (especially in the current youth of the Ethereum ecosystem) and we differentiate ourselves by taking a lean approach.</p>
+
+
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <div align="center" style="margin: 1em 0;">
+        <ins class="adsbygoogle"
+             style="display:block; border-bottom: initial;"
+             data-ad-client="ca-pub-7328585512091257"
+             data-ad-slot="3049671934"
+             data-ad-format="auto"></ins>
+        </div>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><div class="search-searchbar"></div>
+    <div class="search-hits"></div></div>
+
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://instagram.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    <li><a href="/minimal-mistakes/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 Michael Rose. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/minimal-mistakes/assets/js/main.min.js"></script>
+  <script data-search-pseudo-elements defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+
+
+<!-- Including InstantSearch.js library and styling -->
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch-theme-algolia.min.css">
+
+<script>
+// Instanciating InstantSearch.js with Algolia credentials
+const search = instantsearch({
+  appId: 'QB6HVGBSBA',
+  apiKey: '9d5014e5bbc77372547bce778dfa5663',
+  indexName: 'minimal_mistakes',
+  searchParameters: {
+    restrictSearchableAttributes: [
+      'title',
+      'content'
+    ]
+  }
+});
+
+const hitTemplate = function(hit) {
+  const url = hit.url;
+  const title = hit._highlightResult.title.value;
+  const content = hit._highlightResult.html.value;
+
+  return `
+    <div class="list__item">
+      <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="/minimal-mistakes${url}">${title}</a></h2>
+        <div class="archive__item-excerpt" itemprop="description">${content}</div>
+      </article>
+    </div>
+  `;
+}
+
+// Adding searchbar and results widgets
+search.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '.search-searchbar',
+    poweredBy: true,
+    placeholder: 'Enter your search term...'
+  })
+);
+search.addWidget(
+  instantsearch.widgets.hits({
+    container: '.search-hits',
+    templates: {
+      item: hitTemplate
+    }
+  })
+);
+
+// Starting the search
+search.start();
+</script>
+
+
+
+
+
+
+  </body>
+</html>
